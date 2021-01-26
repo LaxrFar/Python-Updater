@@ -21,5 +21,5 @@ print('Backing up complete')
 print('Beginning download of new files')
 exeurl = 'https://domain.xyz/exefile.exe'
 exe = requests.get(exeurl, allow_redirects=True)
-open(path + '\\exefile.exe', 'wb').write(injr.content)
+open(path + '\\exefile.exe', 'wb').write(exe.content)
 print('Download complete')
